@@ -1,0 +1,184 @@
+:root {
+  --background-color: #f7fafc;
+
+  --eucalyptus-100: #E6F3EF;
+  --eucalyptus-200: #C0E1D7;
+  --eucalyptus-300: #9ACFBF;
+  --eucalyptus-400: #4EAB90;
+  --eucalyptus-500: #028760;
+  --eucalyptus-600: #027A56;
+  --eucalyptus-700: #01513A;
+  --eucalyptus-800: #013D2B;
+  --eucalyptus-900: #01291D;
+
+  --java-100: #EDF9F8;
+  --java-200: #D2EFED;
+  --java-300: #B6E5E2;
+  --java-400: #80D2CD;
+  --java-500: #49BEB7;
+  --java-600: #42ABA5;
+  --java-700: #2C726E;
+  --java-800: #215652;
+  --java-900: #163937;
+
+  --golden-tainoi-100: #FFFAEF;
+  --golden-tainoi-200: #FEF3D6;
+  --golden-tainoi-300: #FDECBD;
+  --golden-tainoi-400: #FCDD8C;
+  --golden-tainoi-500: #FACF5A;
+  --golden-tainoi-600: #E1BA51;
+  --golden-tainoi-700: #967C36;
+  --golden-tainoi-800: #715D29;
+  --golden-tainoi-900: #4B3E1B;
+
+
+  --medium-red-violet-100: #F9ECF4;
+  --medium-red-violet-200: #F1D0E4;
+  --medium-red-violet-300: #E8B3D3;
+  --medium-red-violet-400: #D77AB2;
+  --medium-red-violet-500: #C64191;
+  --medium-red-violet-600: #B23B83;
+  --medium-red-violet-700: #772757;
+  --medium-red-violet-800: #591D41;
+  --medium-red-violet-900: #3B142C;
+}
+
+.block-border-left {
+  border-left: 1px solid var(--eucalyptus-300);
+}
+.roam-log-container .roam-log-page {
+  border-top: 1px solid var(--eucalyptus-300);
+}
+
+/**
+sync icon
+**/
+.rm-synced {
+  background-color: var(--java-600) !important;
+}
+.rm-saving-remote {
+  background-color: var(--golden-tainoi-600) !important;
+}
+
+/**
+title
+**/
+.rm-db-title {
+  color: var(--eucalyptus-700) !important;
+}
+
+/**
+bullets
+**/
+.roam-bullet-closed {
+ background-color: var(--eucalyptus-200) !important;
+}
+.simple-bullet-inner {
+  background-color: var(--eucalyptus-400) !important;
+}
+
+/**
+checkboxes
+**/
+.check-container input:checked ~ .checkmark {
+  background-color: var(--eucalyptus-300);
+  border: none !important;
+}
+.checkmark {
+  border: 1px solid var(--eucalyptus-200) !important;
+  background-color: white;
+}
+
+/**
+unlinked reference
+**/
+.rm-reference-main strong[style] {
+  color: var(--eucalyptus-400) !important;
+}
+.rm-reference-container div[style] {
+  color: var(--eucalyptus-400) !important;
+}
+
+.checkmark input:not:checked {
+  background-color: white;
+}
+
+.roam-sidebar-container,
+.roam-body-main,
+.roam-topbar,
+#right-sidebar {
+  background-color: var(--background-color) !important;
+}
+
+#roam-sidebar-logo img {
+  position: relative;
+  filter: invert(1);
+}
+
+h1,
+.rm-ref-page-view-title a span {
+  color: var(--eucalyptus-700) !important;
+}
+
+.roam-body-main,
+.starred-pages div,
+.roam-sidebar-container span,
+.log-button {
+  color: var(--eucalyptus-800) !important;
+}
+
+.roam-body-main div,
+textarea {
+  font-family: Arial !important;
+  line-height: 1.625;
+}
+textarea::selection,
+*::selection,
+.block-highlight-blue,
+.block-highlight-blue a,
+.block-highlight-blue .rm-page-ref:not(.rm-page-ref-tag),
+.block-highlight-blue .rm-alias {
+  color: var(--java-100) !important;
+  background-color: var(--java-700);
+}
+
+.starred-pages a div:hover,
+.log-button:hover,
+.top-row:hover,
+#roam-sidebar-logo:hover {
+  background-color: var(--eucalyptus-100) !important;
+}
+
+.roam-body-main a,
+.rm-reference-container a {
+  color: var(--eucalyptus-500) !important;
+}
+
+.roam-body-main code {
+  background: repeating-linear-gradient(45deg, var(--java-300), var(--java-300) 1px, var(--java-100) 0, var(--java-100) 5px);
+  border: 1px solid var(--java-400);
+  border-radius: 0;
+}
+
+.rm-page-ref {
+  color: var(--java-700);
+  text-decoration: italic !important;
+}
+
+.rm-page-ref-brackets {
+  color: var(--java-400) !important;
+}
+
+a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor,currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  transition: background-size .3s cubic-bezier(0,.5,0,1);
+}
+
+a:hover {
+  text-decoration: none;
+  background-size: 100% 2px;
+}
