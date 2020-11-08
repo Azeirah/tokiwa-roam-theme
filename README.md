@@ -4,6 +4,8 @@ A serene theme for Roam Research
 
 This is my first theme for Roam, inspired by [the existing Tokiwa Hugo theme](https://github.com/heyeshuang/hugo-theme-tokiwa)
 
+![Tokiwa example image](tokiwa.png)
+
 ## Installation
 
 If you haven't aready, create a page named `roam/css`
